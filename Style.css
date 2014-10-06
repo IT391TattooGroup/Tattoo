@@ -1,10 +1,12 @@
 @CHARSET "ISO-8859-1";
 
-body { font-size: 80%; color:#FFFAFA; background-color: #F5f5DC; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+body { font-size: 80%; color:#FFFAFA; background-color: #D7D7D7; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
 ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
 ul#tabs li { display: inline; }
 ul#tabs li a { color: #FFFAFA; background-color: #2E2E2E; border: 1px solid black; border-bottom: none; padding: 0.3em; text-decoration: none; }
 ul#tabs li a:hover { background-color: #42561D; }
-ul#tabs li a.selected { color: #F5f5DC; background-color: #2E2E2E; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+ul#tabs li.selected { color: #F5f5DC; background-color: #2E2E2E; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; z-index: 3;}
 div.tabContent { border: 1px solid black; padding: 0.5em;  background-color: #2E2E2E; }
 div.tabContent.hide { display: none; }
+ul#tabs{position: relative;}
+ul#tabs:before{z-index: 1 ;}
