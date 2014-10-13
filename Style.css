@@ -1,6 +1,6 @@
 @CHARSET "ISO-8859-1";
 
-body { font-size: 80%; color:#FFFAFA; background-color: #F5f5DC; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+body { font-size: 80%; color:#FFFAFA; background-color: #d7d7d7; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
 ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; position: relative;}
 ul#tabs:before { z-index: 1;  }
 ul#tabs li { display: inline; position: relative; }
