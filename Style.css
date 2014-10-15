@@ -7,7 +7,7 @@ ul#tabs li { display: inline; position: relative; }
 ul#tabs li a { color: #FFFAFA; background-color: #2E2E2E; border: 1px solid black; border-bottom: none; padding: 0.3em; text-decoration: none; }
 ul#tabs li:before { left: -6px; border-bottom-right-radius: 6px; border-width: 0 1px 1px 0; }
 ul#tabs li:after { position: absolute; bottom: -1px; width: 6px; height: 6px; content: " "; right: -6px; border-bottom-left-radius: 6px; border-width: 0 0 1px 1px;}
-ul#tabs li a:hover { background-color: #42561D; }
+ul#tabs li a:hover { background-color: #a7a7a7; }
 ul#tabs li.selected { color: #F5f5DC; background-color: #2E2E2E; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; z-index: 3;}
 div.tabContent { border: 1px solid black; padding: 0.5em;  background-color: #2E2E2E; }
 div.tabContent.hide { display: none; }
