@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="Style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="myscripts.js"></script>
+<script type="text/javascript" src="getData.js"></script>
+<title>Schedule</title>
+</head>
+<body onload="showTab()">
+
+
+<ul id="tabs">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Artists.html">Artists</a></li>
+  <li><a href="Merchandise.html">Merchandise</a></li>
+  <li class ="selected"><a href="AboutUs.html">About Us</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="Employee.html">Employees Only</a></li>
+</ul>
+
+<div class="tabContent" id="update">
+
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi"
+enctype="multipart/form-data" method="post" id="addEmployee">
+<h3>Add Image to Gallery</h3>
+Employee ID Number: <input type="text" id="IDNumber" name="IDNumber" size="25" /><br>
+<p>
+Type some text (if you like):<br>
+<input type="text" name="textline" size="30">
+</p>
+<p>
+Please specify a file, or a set of files:<br>
+<input type="file" name="datafile" size="40">
+</p>
+<div>
+<input type="submit" value="Send">
+</div>
+</form>
+
+
+  <!-- <form id="addEmployee">
+		<h3>Add Image to Gallery</h3>
+		<p>To add an employee shift please fill out the following information. </p>
+		Employee ID Number: <input type="text" id="IDNumber" name="IDNumber" size="25" /><br>
+		Employee First Name: <input type="text" id="fName" name="fName" size="25" /><br>
+		Employee Last Name: <input type="text" id="lName" name="lName" size="25" /><br>
+		Shift Day: <select name="shiftDay" id="shiftDay">
+  						<option value="Monday">Monday</option>
+  						<option value="Tuesday">Tuesday</option>
+  						<option value="Wednesday">Wednesday</option>
+  						<option value="Thursday">Thursday</option>
+  						<option value="Friday">Friday</option>
+  						<option value="Saturday">Saturday</option>
+					</select><br>
+		Shift Start Time: 	<select name="shiftStart" id="shiftStart">
+  								<option value="6:00 A.M.">6:00 A.M.</option>
+  								<option value="7:00 A.M.">7:00 A.M.</option>
+  								<option value="8:00 A.M.">8:00 A.M.</option>
+  								<option value="9:00 A.M.">9:00 A.M.</option>
+  								<option value="10:00 A.M.">10:00 A.M.</option>
+  								<option value="11:00 A.M.">11:00 A.M.</option>
+  								<option value="12:00 P.M.">12:00 P.M.</option>
+  								<option value="1:00 P.M.">1:00 P.M.</option>
+  								<option value="2:00 P.M.">2:00 P.M.</option>
+  								<option value="3:00 P.M.">3:00 P.M.</option>
+  								<option value="4:00 P.M.">4:00 P.M.</option>
+  								<option value="5:00 P.M.">5:00 P.M.</option>
+  								<option value="6:00 P.M.">6:00 P.M.</option>
+  								<option value="7:00 P.M.">7:00 P.M.</option>
+  								<option value="8:00 P.M.">8:00 P.M.</option>
+  								<option value="9:00 P.M.">9:00 P.M.</option>
+  								<option value="10:00 P.M.">10:00 P.M.</option>
+					</select><br>
+		Shift End Time: 	<select name="shiftEnd" id="shiftEnd">
+  								<option value="6:00 A.M.">6:00 A.M.</option>
+  								<option value="7:00 A.M.">7:00 A.M.</option>
+  								<option value="8:00 A.M.">8:00 A.M.</option>
+  								<option value="9:00 A.M.">9:00 A.M.</option>
+  								<option value="10:00 A.M.">10:00 A.M.</option>
+  								<option value="11:00 A.M.">11:00 A.M.</option>
+  								<option value="12:00 P.M.">12:00 P.M.</option>
+  								<option value="1:00 P.M.">1:00 P.M.</option>
+  								<option value="2:00 P.M.">2:00 P.M.</option>
+  								<option value="3:00 P.M.">3:00 P.M.</option>
+  								<option value="4:00 P.M.">4:00 P.M.</option>
+  								<option value="5:00 P.M.">5:00 P.M.</option>
+  								<option value="6:00 P.M.">6:00 P.M.</option>
+  								<option value="7:00 P.M.">7:00 P.M.</option>
+  								<option value="8:00 P.M.">8:00 P.M.</option>
+  								<option value="9:00 P.M.">9:00 P.M.</option>
+  								<option value="10:00 P.M.">10:00 P.M.</option>
+					</select><br>
+		<input type="submit"> <br>
+		
+		
+	
+	
+	</form> -->
+	<form id="deleteEmployee">
+		<h3>Delete Gallery Photo</h3>
+		<p>Please enter the image ID and the employee ID for the image you would like to delete. </p>
+		Image Number: <input type="text" id="shiftNum" name="shiftNum" size="25" /><br>
+		Employee ID Number: <input type="text" id="IDNumber" name="IDNumber" size="25" /><br>
+		<input type="submit"> <br>
+		
+		
+	
+	
+	<!-- </form>
+	<form id="modifyEmployee">
+		<h3>Modify Employee Shift</h3>
+		<p>Please enter the shift number of the employee shift you would like to modify.</p>
+		Shift Number: <input type="text" id="modifyID" name="modifyID" size="25" /><br>
+		<p>Select the field you would like to modify.</p>
+		
+					<select name="modifyField" id="modifyField">
+								<option value="employeeID">Employee ID</option>
+								<option value="firstName">First Name</option>
+								<option value="lastName">Last Name</option>
+								<option value="shiftDay">Shift Day</option>
+								<option value="shiftStart">Shift Start</option>
+								<option value="shiftEnd">Shift End</option>
+					</select><br>
+		<p>Enter the value you would like it to be. </p>
+		Value: <input type="text" id="modifyValue" name="modifyValue" size="25" /><br>
+	
+		<input type="submit"> <br>
+		
+		
+	
+	
+	</form> -->
+</div>
+ 
+
+
+</body>
+</html>
