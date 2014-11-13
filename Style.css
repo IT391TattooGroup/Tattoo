@@ -23,3 +23,41 @@ ul#tabs li  a{
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
+#banner li {
+        list-style: none;
+        display: block;
+        float: left;
+        margin: 0px;
+}
+/* this sets the format of the text tabs */
+#banner li a {
+        text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+        display: block;
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 1.5em;
+        margin: 20px;
+}
+/* sets the offset of the hover effect */
+#banner li a:hover {
+        margin-top: 22px;
+		
+}
+/* sets the width of the container that holds the tab form*/
+#navigation_container {
+margin: 0 auto;
+width: 1080px;
+}
+/* controls the formatting of the shaded bar behind the tabs */
+.rectangle {
+   background: gray;
+   height: 80px;
+   position: relative;
+   -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   z-index: 500; /* the stack order: foreground */
+   margin: 2em 0;
+}
