@@ -1,0 +1,11 @@
+<body onload="init()">
+  <!--this code adds the nice banner with links -->
+  <div class="rectangle">
+    <ul id="banner" >	  	 
+    	<li><img src="./TattooLogo.png" alt="Logo" height="80" width="80"></li>
+    	<li><a href="Home.html">Home</a></li>
+    	<li><a href="Artists.html">Artists</a></li>
+    	<li><a href="AboutUs.html">About Us</a></li>
+    </ul>
+  </div>
+</body>
