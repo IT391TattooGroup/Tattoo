@@ -1,34 +1,87 @@
 @CHARSET "ISO-8859-1";
 
-body { font-size: 80%; color:#FFFAFA; background-color: #d7d7d7; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
-ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; position: relative;}
-ul#tabs:before { z-index: 1;  }
-ul#tabs li { display: inline; position: relative; }
-ul#tabs li a { color: #FFFAFA; background-color: #2E2E2E; border: 1px solid black; border-bottom: none; padding: 0.3em; text-decoration: none; }
-ul#tabs li:before { left: -6px; border-bottom-right-radius: 6px; border-width: 0 1px 1px 0; }
-ul#tabs li:after { position: absolute; bottom: -1px; width: 6px; height: 6px; content: " "; right: -6px; border-bottom-left-radius: 6px; border-width: 0 0 1px 1px;}
-ul#tabs li a:hover { background-color: #a7a7a7; }
-ul#tabs li.selected { color: #F5f5DC; background-color: #2E2E2E; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; z-index: 3;}
-div.tabContent { border: 1px solid black; padding: 0.5em;  background-color: #2E2E2E; }
-div.tabContent.hide { display: none; }
-
-ul#tabs{
-	border-top-left-radius: 6px;
-    border-top-right-radius: 6px;}
-ul#tabs li {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+body {
+	width:100%;
+	margin:75px 0px; padding:0px;
+	text-align:center;
+    background-image: url("http://wallpoper.com/images/00/31/33/51/black-background_00313351.jpg");
+    
 }
-ul#tabs li  a{
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+	
+#top{
+	width:900px;
+	margin:0px auto;
+	
+	margin-top:-80px;
+	margin-bottom:200px;
+	background-color:gray;
+	border-right-style:solid;
+	border-left-style:solid;
+	border-color:black;
+	border-width: 40px;
+	}
+	
+#padding {
+	width:900px;
+	margin:0px auto;
+	height:100px;
+	
+	background-color:gray;
+	border-right-style:solid;
+	border-left-style:solid;
+	border-color:black;
+	border-width: 40px;
+	}
+	
+
+
+
+	
+	
+	
+#nav { 
+    margin-top:-200px;
+    margin:0px auto;
+    
+    width: 900px; 
+	font-size:30px;
+ } 
+ 
+ #table{
+	
+	margin:0px auto;
+	
+	}
+	
+	
+#artistPicture { 
+   
+   text-align:right;
+    
+   border: 1px solid #d1c7ac; 
+}
+
+
+body { font-size: 80%; color:#FFFAFA; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+
+#banner{
+		width:1000px;
+ left:21.5%;
+ margin-left:-50px;
+ position:absolute;
 }
 #banner li {
         list-style: none;
         display: block;
         float: left;
         margin: 0px;
+		text-align:center;
+		margin-right:93px;
 }
+
+#pic{
+		margin:-50px;
+	}
 /* this sets the format of the text tabs */
 #banner li a {
         text-shadow: 0 2px 1px rgba(0,0,0,0.5);
@@ -37,19 +90,19 @@ ul#tabs li  a{
         color: #f0f0f0;
         font-size: 1.5em;
         margin: 20px;
-}
-/* sets the offset of the hover effect */
-#banner li a:hover {
-        margin-top: 22px;
 		
 }
+/* sets the offset of the hover effect */
+
 /* sets the width of the container that holds the tab form*/
 #navigation_container {
 margin: 0 auto;
-width: 1080px;
+width: 100%;
+
 }
 /* controls the formatting of the shaded bar behind the tabs */
 .rectangle {
+	width:100%;
    background: gray;
    height: 80px;
    position: relative;
